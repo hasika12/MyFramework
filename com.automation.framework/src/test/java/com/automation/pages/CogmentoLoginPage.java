@@ -18,6 +18,7 @@ public class CogmentoLoginPage {
 	}
 	
 	//@findby is an annotation
+	//How is a class
 	@FindBy(how=How.XPATH, using="//*[@name='email']")
 	public WebElement EdtEmailID;
 	
