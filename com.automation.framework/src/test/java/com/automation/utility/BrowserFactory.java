@@ -20,7 +20,7 @@ public class BrowserFactory {
 		}
 		else if(browserName.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "./Drivers/firefoxdriver.exe");
+			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		else if(browserName.equalsIgnoreCase("ie"))

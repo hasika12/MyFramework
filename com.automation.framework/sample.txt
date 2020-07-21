@@ -1,2 +1,38 @@
 
 My Text
+========================== MAVEN INFO =======================
+The Surefire Plugin is used during the test phase of the build lifecycle to execute the unit tests of an application. It generates reports in two different file formats:
+
+Plain text files (*.txt)
+XML files (*.xml)
+By default, these files are generated in ${basedir}/target/surefire-reports/TEST-*.xml.
+
+Run as, Maven clean will delete the target folder in our local git location(C:\Users\Sai\git\MyFramework\com.automation.framework\target)
+target folder will contain previous reports, jars etc...
+
+Run as, Maven install will do 2 things
+1) it will all the dependencies are present inlocal or not if present it will skip, else it will download from web
+2) it will build the complete project and will generate the jar file and it will run our test as well
+
+Run as, Maven build will ask to specify goals. specify as clean install.
+and for adding the parameters click on add and the browser parameter
+
+Even if single test fails, it will be shown as build failed
+
+few exceptions observed while running as Maven install
+1) No complier is provided please consider adding JDK, then goto--> click on window> Preference> point to JDK
+
+
+Inorder to run the scripts from cmd launch cmd and navigate to the path where the project is located
+we should give the path till pom.xml cd C:\Users\Sai\git\MyFramework\com.automation.framework
+now when we say mvn clean here like C:\Users\Sai\git\MyFramework\com.automation.framework> mvn clean
+it will delete the target folder
+
+when we say mvn install here like C:\Users\Sai\git\MyFramework\com.automation.framework> mvn install
+
+when we say mvn install it will w.r.to this framework becoz we need to pass parameters here as
+mvn install -Dbrowser=Chrome -DurlToBeTested=https://ui.cogmento.com/
+
+==============================================================================
+
+Integrating with Jenkins
