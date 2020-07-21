@@ -17,6 +17,7 @@ public class CogmentoLoginPage {
 		this.driver=ldriver;
 	}
 	
+	//@findby is an annotation
 	@FindBy(how=How.XPATH, using="//*[@name='email']")
 	public WebElement EdtEmailID;
 	
