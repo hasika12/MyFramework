@@ -47,6 +47,7 @@ public class BaseClass {
 	@BeforeMethod
 	public void setup(String browser, String url)
 	{
+		
 		Reporter.log("Trying to start the browser", true);
 		
 		//driver = BrowserFactory.launchApplication(driver, config.getBrowser(), config.getSITurl());
@@ -63,7 +64,7 @@ public class BaseClass {
 		
 		if(result.getStatus()==ITestResult.FAILURE)
 		{
-			Helper.captureScreenshot(driver);
+			//Helper.captureScreenshot(driver);
 			try {
 				logger.fail("Test Failed", MediaEntityBuilder.createScreenCaptureFromPath(Helper.captureScreenshot(driver)).build());
 			} catch (IOException e) {

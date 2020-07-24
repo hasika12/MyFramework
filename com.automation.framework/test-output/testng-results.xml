@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="0" skipped="1">
   <reporter-output>
     <line>
       <![CDATA[Settingup reports and test started]]>
@@ -7,25 +7,13 @@
     <line>
       <![CDATA[Settingup is done and test can be started]]>
     </line>
-    <line>
-      <![CDATA[Trying to start the browser]]>
-    </line>
-    <line>
-      <![CDATA[Browser and application is up and running]]>
-    </line>
-    <line>
-      <![CDATA[Trying to start the browser]]>
-    </line>
-    <line>
-      <![CDATA[Browser and application is up and running]]>
-    </line>
   </reporter-output>
-  <suite started-at="2020-07-21T08:45:06Z" name="Suite" finished-at="2020-07-21T08:45:32Z" duration-ms="25682">
+  <suite started-at="2020-07-24T03:15:34Z" name="Default suite" finished-at="2020-07-24T03:15:34Z" duration-ms="103">
     <groups>
     </groups>
-    <test started-at="2020-07-21T08:45:06Z" name="Test" finished-at="2020-07-21T08:45:32Z" duration-ms="25682">
+    <test started-at="2020-07-24T03:15:34Z" name="Default test" finished-at="2020-07-24T03:15:34Z" duration-ms="103">
       <class name="com.automation.testscripts.LoginTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.testscripts.LoginTest@52e7a6b2]" started-at="2020-07-21T08:45:06Z" name="setupSuite" finished-at="2020-07-21T08:45:06Z" duration-ms="811" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:com.automation.testscripts.LoginTest@6f6745d6]" started-at="2020-07-24T03:15:32Z" name="setupSuite" finished-at="2020-07-24T03:15:34Z" duration-ms="1800" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Settingup reports and test started]]>
@@ -35,57 +23,95 @@
             </line>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.testscripts.LoginTest@52e7a6b2]" started-at="2020-07-21T08:45:06Z" name="setup" finished-at="2020-07-21T08:45:17Z" duration-ms="10641" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.automation.testscripts.LoginTest@6f6745d6]" started-at="2020-07-24T03:15:34Z" name="setup" finished-at="2020-07-24T03:15:34Z" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1346348687\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1346348687\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
-            <line>
-              <![CDATA[Trying to start the browser]]>
-            </line>
-            <line>
-              <![CDATA[Browser and application is up and running]]>
-            </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="loginApp()[pri:1, instance:com.automation.testscripts.LoginTest@52e7a6b2]" started-at="2020-07-21T08:45:17Z" name="loginApp" finished-at="2020-07-21T08:45:18Z" duration-ms="556" status="PASS">
+        <test-method signature="loginApp()[pri:1, instance:com.automation.testscripts.LoginTest@6f6745d6]" started-at="2020-07-24T03:15:34Z" name="loginApp" finished-at="2020-07-24T03:15:34Z" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1346348687\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by BeforeMethod on method setup but has not been marked @Optional or defined
+in C:\Users\Sai\AppData\Local\Temp\testng-eclipse-1346348687\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:290)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
+at org.testng.internal.Parameters.createParameters(Parameters.java:620)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
+at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginApp -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.testscripts.LoginTest@52e7a6b2]" started-at="2020-07-21T08:45:18Z" name="tearDown" finished-at="2020-07-21T08:45:19Z" duration-ms="1726" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginApp status=SUCCESS method=LoginTest.loginApp()[pri:1, instance:com.automation.testscripts.LoginTest@52e7a6b2] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.automation.testscripts.LoginTest@52e7a6b2]" started-at="2020-07-21T08:45:19Z" name="setup" finished-at="2020-07-21T08:45:31Z" duration-ms="11300" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Trying to start the browser]]>
-            </line>
-            <line>
-              <![CDATA[Browser and application is up and running]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginApp1()[pri:2, instance:com.automation.testscripts.LoginTest@52e7a6b2]" started-at="2020-07-21T08:45:31Z" name="loginApp1" finished-at="2020-07-21T08:45:31Z" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginApp1 -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.testscripts.LoginTest@52e7a6b2]" started-at="2020-07-21T08:45:31Z" name="tearDown" finished-at="2020-07-21T08:45:32Z" duration-ms="1438" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=loginApp1 status=SUCCESS method=LoginTest.loginApp1()[pri:2, instance:com.automation.testscripts.LoginTest@52e7a6b2] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.automation.testscripts.LoginTest@6f6745d6]" started-at="2020-07-24T03:15:34Z" name="tearDown" finished-at="2020-07-24T03:15:34Z" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.automation.testscripts.LoginTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

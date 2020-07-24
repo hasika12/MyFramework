@@ -30,7 +30,7 @@ it will delete the target folder
 
 when we say mvn install here like C:\Users\Sai\git\MyFramework\com.automation.framework> mvn install
 
-when we say mvn install it will w.r.to this framework becoz we need to pass parameters here as
+when we say mvn install it will (w.r.to this framework) becoz we need to pass parameters here as
 mvn install -Dbrowser=Chrome -DurlToBeTested=https://ui.cogmento.com/
 
 ==============================================================================

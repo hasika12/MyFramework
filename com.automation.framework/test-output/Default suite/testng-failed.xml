@@ -5,6 +5,7 @@
     <classes>
       <class name="com.automation.testscripts.LoginTest">
         <methods>
+          <include name="setupSuite"/>
           <include name="setup"/>
           <include name="loginApp"/>
           <include name="tearDown"/>

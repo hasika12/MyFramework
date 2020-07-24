@@ -1,5 +1,6 @@
 package com.automation.pages;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -31,6 +32,7 @@ public class CogmentoLoginPage {
 	public void loginToCogmento(String uid, String pwd)
 	{
 		EdtEmailID.sendKeys(uid);
+		//EdtEmailID.sendKeys(Keys.TAB); we can use Keys.TAB to move to next webelement
 		EdtPwd.sendKeys(pwd);
 		BtnLogin.click();
 		
