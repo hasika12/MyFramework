@@ -3,6 +3,7 @@ package com.automation.pages;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 
@@ -21,6 +22,7 @@ public class CogmentoLoginPage {
 	//@findby is an annotation
 	//How is a class
 	@FindBy(how=How.XPATH, using="//*[@name='email']")
+	@CacheLookup
 	public WebElement EdtEmailID;
 	
 	@FindBy(how=How.NAME, using="password")

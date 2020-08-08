@@ -1,5 +1,4 @@
 
-My Text
 ========================== MAVEN INFO =======================
 The Surefire Plugin is used during the test phase of the build lifecycle to execute the unit tests of an application. It generates reports in two different file formats:
 
@@ -11,7 +10,7 @@ Run as, Maven clean will delete the target folder in our local git location(C:\U
 target folder will contain previous reports, jars etc...
 
 Run as, Maven install will do 2 things
-1) it will all the dependencies are present inlocal or not if present it will skip, else it will download from web
+1) it will check whether all the dependencies are present in local or not if present it will skip, else it will download from web
 2) it will build the complete project and will generate the jar file and it will run our test as well
 
 Run as, Maven build will ask to specify goals. specify as clean install.

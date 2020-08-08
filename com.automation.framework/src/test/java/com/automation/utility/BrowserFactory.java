@@ -33,7 +33,7 @@ public class BrowserFactory {
 			System.out.println("Please specify a valid browser");
 		}
 		
-		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
 		
 		driver.manage().window().maximize();
 		
