@@ -18,7 +18,7 @@ public class Helper {
 	public static String captureScreenshot(WebDriver driver)
 	{
 		TakesScreenshot ts = (TakesScreenshot)driver; //TakesScreenshot is an interface, for interface we cannot create
-													  // an object, so we need to type cast it forecfully to driver reference				
+													  // an object, so we need to type cast it forcefully to driver reference				
 		
 		String screenshotPath = System.getProperty("user.dir")+"/Screenshots/Cogmento-"+ getCurrentDateTime() + ".png";
 		

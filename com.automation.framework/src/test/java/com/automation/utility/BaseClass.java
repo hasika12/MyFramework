@@ -29,7 +29,7 @@ public class BaseClass {
 	@BeforeSuite
 	public void setupSuite()
 	{
-		// these logs will not be generated in extent reports, will only be genereated in testng reports
+		// these logs will not be generated in extent reports, will only be generated in testng reports
 		Reporter.log("Settingup reports and test started", true);
 		
 		excel = new ExcelDataProvider();

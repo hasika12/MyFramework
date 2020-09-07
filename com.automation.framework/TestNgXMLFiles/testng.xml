@@ -6,6 +6,7 @@
   
     <classes>
       <class name="com.automation.testscripts.LoginTest"/>
+    
     </classes>
     
   </test> <!-- Test -->
