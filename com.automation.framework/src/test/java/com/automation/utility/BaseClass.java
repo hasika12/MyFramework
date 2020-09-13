@@ -39,7 +39,7 @@ public class BaseClass {
 		report = new ExtentReports();
 		report.attachReporter(extent);
 		
-		Reporter.log("Settingup is done and test can be started", true);
+		Reporter.log("Setting up is done and test can be started", true);
 		
 	}
 	
@@ -47,6 +47,8 @@ public class BaseClass {
 	@BeforeMethod
 	public void setup(String browser, String url)
 	{
+		
+		//public void setup(String browser, String url)
 		
 		Reporter.log("Trying to start the browser", true);
 		

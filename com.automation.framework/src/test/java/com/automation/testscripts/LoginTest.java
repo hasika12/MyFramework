@@ -1,9 +1,13 @@
 package com.automation.testscripts;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.automation.pages.CogmentoLoginPage;
+import com.automation.pages.CogmentoLogoutPage;
 import com.automation.utility.BaseClass;
 import com.automation.utility.BrowserFactory;
 import com.automation.utility.ExcelDataProvider;
@@ -14,7 +18,7 @@ public class LoginTest extends BaseClass {
 
 	
 	@Test(priority=1)
-	public void loginApp()
+	public void loginApp() throws Exception
 	{
 			
 		/*PageFactory is a class which has initElements as a method. 
@@ -24,6 +28,9 @@ public class LoginTest extends BaseClass {
 		logger = report.createTest("Login to Cogmento");
 		
 		CogmentoLoginPage loginpg =PageFactory.initElements(driver, CogmentoLoginPage.class);
+		CogmentoLogoutPage logoutpg = PageFactory.initElements(driver, CogmentoLogoutPage.class);
+		
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		logger.info("Launching the application");
 		
@@ -32,6 +39,16 @@ public class LoginTest extends BaseClass {
 		logger.pass("Login done successfully");
 		
 		//Helper.captureScreenshot(driver);
+		
+		Assert.assertEquals(driver.getTitle(), "Cogmento CRM");
+		
+		Thread.sleep(5000);
+		
+		logoutpg.LnkSettings.click();
+		
+		Thread.sleep(5000);
+		
+		logoutpg.LnkLogout.click();
 		
 	}
 	
