@@ -35,4 +35,6 @@ mvn install -Dbrowser=Chrome -DurlToBeTested=https://ui.cogmento.com/ -DxmlFiles
 
 ==============================================================================
 
-Integrating with Jenkins
+Cucumber reporting
+
+https://stackoverflow.com/questions/51257224/maven-cucumber-reporting-plugin-is-not-generating-the-report-nothing-happens

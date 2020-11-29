@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class BrowserFactory {
 	
 	
@@ -14,18 +16,21 @@ public class BrowserFactory {
 	{
 		if(browserName.equalsIgnoreCase("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver84.exe");
+			//System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver84.exe");
+			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver();
 			
 		}
 		else if(browserName.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+			//System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
 		}
 		else if(browserName.equalsIgnoreCase("ie"))
 		{
-			System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
+			//System.setProperty("webdriver.ie.driver", "./Drivers/IEDriverServer.exe");
+			WebDriverManager.iedriver().setup();
 			driver = new InternetExplorerDriver();
 		}
 		else

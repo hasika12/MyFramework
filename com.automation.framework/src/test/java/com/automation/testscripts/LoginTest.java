@@ -2,6 +2,7 @@ package com.automation.testscripts;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
@@ -34,6 +35,7 @@ public class LoginTest extends BaseClass {
 		
 		logger.info("Launching the application");
 		
+
 		loginpg.loginToCogmento(excel.getStringData("LoginData", 0, 0), excel.getStringData("LoginData", 0, 1));
 		
 		logger.pass("Login done successfully");
@@ -51,6 +53,11 @@ public class LoginTest extends BaseClass {
 		logoutpg.LnkLogout.click();
 		
 	}
+	
+	
+	
+	
+	
 	
 	@Test(priority=2)
 	public void loginApp1()
